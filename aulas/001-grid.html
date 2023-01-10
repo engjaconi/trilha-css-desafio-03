@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Exemplo</title>
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100Vh;
+            overflow-y: hidden;
+         }
+        .container {
+            border: 1px solid black;
+            background-color: lightcoral;
+            display: grid;
+            grid-template-columns: max-content repeat(2, 2fr);
+            grid-template-rows: min-content 8fr min-content;
+            grid-auto-flow: row;
+            grid-auto-rows: max-content;
+            height: 100vh;
+        }
+        .item-01 {
+            padding: 10px;
+            background-color: lightblue;
+            grid-column: 1 / 4;
+            grid-row: span 1;
+        }
+        .item-02 {
+            background-color: lightgreen;
+        }
+        .item-03 {
+            background-color: lightseagreen;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .item-04 {
+            background-color: lightslategray;
+        }
+        .item-05 {
+            background-color: lightgrey;
+        }
+        .item-06 {
+            background-color: lightgoldenrodyellow;
+        }
+        .item-07 {
+            padding: 10px;
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-01">Item 1</div>
+        <div class="item item-02">Item 2</div>
+        <div class="item item-03">Item 3</div>
+        <div class="item item-04">Item 4</div>
+        <div class="item item-05">Item 5</div>
+        <div class="item item-06">Item 6</div>
+        <div class="item item-07">Item 7</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr max-content;
+            grid-template-rows: max-content 1fr max-content;
+            grid-template-areas: 
+                "header header header header"
+                "main main main sidebar"
+                "footer footer footer footer";
+        }
+        header {
+            background-color: orange;
+            grid-area: header;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+        }
+        main {
+            background-color: deepskyblue;
+            grid-area: main;
+            padding: 20px;
+        }
+        aside {
+            background-color: lightcoral;
+            grid-area: sidebar;
+            padding: 10px;
+        }
+        footer {
+            background-color: yellowgreen;
+            grid-area: footer;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        header
+        <nav><ol><li>link</li></ol></nav>
+    </header>
+    <main>
+        main
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae accusantium voluptate animi facere blanditiis? Consectetur eaque, praesentium dolor modi consequuntur nemo, nisi quae sint ipsa in quaerat. Sequi, commodi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae accusantium voluptate animi facere blanditiis? Consectetur eaque, praesentium dolor modi consequuntur nemo, nisi quae sint ipsa in quaerat. Sequi, commodi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae accusantium voluptate animi facere blanditiis? Consectetur eaque, praesentium dolor modi consequuntur nemo, nisi quae sint ipsa in quaerat. Sequi, commodi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae accusantium voluptate animi facere blanditiis? Consectetur eaque, praesentium dolor modi consequuntur nemo, nisi quae sint ipsa in quaerat. Sequi, commodi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae accusantium voluptate animi facere blanditiis? Consectetur eaque, praesentium dolor modi consequuntur nemo, nisi quae sint ipsa in quaerat. Sequi, commodi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae accusantium voluptate animi facere blanditiis? Consectetur eaque, praesentium dolor modi consequuntur nemo, nisi quae sint ipsa in quaerat. Sequi, commodi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae accusantium voluptate animi facere blanditiis? Consectetur eaque, praesentium dolor modi consequuntur nemo, nisi quae sint ipsa in quaerat. Sequi, commodi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae accusantium voluptate animi facere blanditiis? Consectetur eaque, praesentium dolor modi consequuntur nemo, nisi quae sint ipsa in quaerat. Sequi, commodi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae accusantium voluptate animi facere blanditiis? Consectetur eaque, praesentium dolor modi consequuntur nemo, nisi quae sint ipsa in quaerat. Sequi, commodi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae accusantium voluptate animi facere blanditiis? Consectetur eaque, praesentium dolor modi consequuntur nemo, nisi quae sint ipsa in quaerat. Sequi, commodi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae accusantium voluptate animi facere blanditiis? Consectetur eaque, praesentium dolor modi consequuntur nemo, nisi quae sint ipsa in quaerat. Sequi, commodi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae accusantium voluptate animi facere blanditiis? Consectetur eaque, praesentium dolor modi consequuntur nemo, nisi quae sint ipsa in quaerat. Sequi, commodi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae accusantium voluptate animi facere blanditiis? Consectetur eaque, praesentium dolor modi consequuntur nemo, nisi quae sint ipsa in quaerat. Sequi, commodi.</p>
+    </main>
+    <aside>
+        sidebar
+        <ol>
+            <li>Artigo A</li>
+            <li>Artigo B</li>
+            <li>Artigo C</li>
+            <li>Artigo D</li>
+            <li>Artigo E</li>
+        </ol>
+    </aside>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>
